@@ -17,11 +17,11 @@ namespace ServiceLayer
 
         static TaskManager()
         {
-            AddChecking(TaskManager.CheckAnswer);
             if (!MessageQueue.Exists(MQueue.ConnectionTask))
                 MessageQueue.Create(MQueue.ConnectionTask);
             if (!MessageQueue.Exists(MQueue.ConnectionAnswer))
                 MessageQueue.Create(MQueue.ConnectionAnswer);
+            AddChecking(TaskManager.CheckAnswer);
         }
 
         public static List<Task> ReturnAllTasks()

@@ -17,5 +17,3 @@ c:\home\SIS\Lab5WorkerNode\Lab5WorkerNode\bin\Debug\Lab5WorkerNode.exe
 c:\home\SIS\Lab5WorkerNode\Lab5WorkerNode\bin\Debug\Lab5WorkerNode.pdb
 c:\home\SIS\Lab5WorkerNode\Lab5WorkerNode\bin\Debug\TaskLib.dll
 c:\home\SIS\Lab5WorkerNode\Lab5WorkerNode\bin\Debug\TaskLib.pdb
-c:\home\Lab6\SIS_\WorkerNode\Lab5WorkerNode\obj\x86\Debug\Lab5WorkerNode.exe
-c:\home\Lab6\SIS_\WorkerNode\Lab5WorkerNode\obj\x86\Debug\Lab5WorkerNode.pdb

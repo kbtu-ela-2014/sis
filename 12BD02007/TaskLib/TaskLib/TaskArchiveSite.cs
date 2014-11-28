@@ -18,7 +18,8 @@ namespace TaskLib
 
         public TaskArchiveSite(string url, int id, Tasks t, string destination) : base(url, id, t)
         {
-            this.destination = destination;
+            this.url = (!url.EndsWith("/")) ? url + "/" : url;
+            this.destination = (!destination.EndsWith("/") && !destination.EndsWith("\\")) ? destination + "/" : destination;
         }
 
         static public void run(SubTask t)
@@ -37,13 +38,27 @@ namespace TaskLib
                 Stream dataStream = response.GetResponseStream();
                 // Open the stream using a StreamReader for easy access.
 
-                string rootHref = t.url.Substring(0, t.url.IndexOf("/", 7) + 1);
 
-                if (t.url.EndsWith(".png") || t.url.EndsWith(".jpg") || t.url.EndsWith(".jpeg") ||
-                     t.url.EndsWith(".bmp") || t.url.EndsWith(".ico"))
+                int at = t.url.IndexOf("/", 7);
+                string rootHref = (at > -1) ? t.url.Substring(0, at + 1) : t.url;
+
+                string hk_ = t.url.ToLower();
+
+                at = hk_.IndexOf("?");
+                    if (at > -1)
+                        hk_ = hk_.Substring(0, at);
+
+
+                if (hk_.EndsWith(".png")  || hk_.EndsWith(".jpg") || hk_.EndsWith(".jpeg") ||
+                    hk_.EndsWith(".bmp")  || hk_.EndsWith(".ico") || hk_.EndsWith("xsl")   ||
+                    hk_.EndsWith(".xslx") || hk_.EndsWith(".pdf") || hk_.EndsWith("doc") || hk_.EndsWith("docx"))
                 {
                     t.answer = new string[0];
                     string fileName = t.destination + t.url.Replace(rootHref, "");
+
+                    at = fileName.IndexOf("?");
+                    if (at > -1)
+                        fileName = fileName.Substring(0, at);
 
                     try
                     {
@@ -92,6 +107,11 @@ namespace TaskLib
 
                     t.answer = newUrls.ToArray<string>();
                     string fileName = t.destination + t.url.Replace(rootHref, "");
+
+                    at = fileName.IndexOf("?");
+                    if (at > -1)
+                        fileName = fileName.Substring(0, at);
+
                     if (Path.GetFileName(fileName) == "")
                         fileName += "index.html";
                     
