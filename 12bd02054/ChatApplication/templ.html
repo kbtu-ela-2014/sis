@@ -1,0 +1,147 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+body
+{
+background-style:solid;
+background-color:#FFCCFF;
+background-size:100%;
+margin-right:200px;
+}
+table.main
+{
+ position:absolute;
+ margin-left:10%;
+ border-spacing: 7px 11px;
+ border-width:2px;
+ border-radius:5px;
+ background-color:#662952;
+ width:80%;
+}
+div.head
+{
+  position:absolute;
+
+  height:50%;
+  margin-left:10%;
+  margin-top:0%;
+  float:left;
+  border-radius:5%;
+  
+  opacity:0.8;
+}
+
+h1.cvety
+{
+color:	#4C1F3D;
+font-family:Georgia;
+ text-shadow: 0 6px 4px #85c226,
+     -3px -5px 4px #fe2192,
+      3px -5px 4px #f7c200;
+font-size: 90px;
+text-align:justify;
+margin-left: 10%;
+margin-top: 0%;
+}
+p.main
+{
+position:absolute;
+  text-align:justify; 
+ width:auto;
+ margin-right:10%;
+ margin-left:0%;
+ margin-top:8%;
+ background-style:solid;
+ background: url('fl2.jpg') no-repeat;
+ background-color:#FFCCFF;
+ border-radius:5%;
+ padding:5%;
+}
+p.mes
+{
+background-color:Bisque;
+font-size:20px;
+position:absolute;
+  text-align:justify; 
+ width:auto;
+ margin-right:0%;
+ margin-left:50%;
+ margin-top:5%;
+ margin-bottom:5%;
+ background-style:solid;
+}
+
+
+
+a:hover,a:active
+{
+background-color:#A34775;
+}
+}
+</style>
+<script language="JavaScript">  
+
+<!-- 
+function testing(form) {
+   if (form.elements[0].value == "")
+      {
+          alert("Please, enter login");
+          document.testform.elements[0].focus();
+          return false;
+       }  
+         
+   if (form.elements[1].value == "")
+      {
+          alert("Please, enter password");
+          document.testform.elements[2].focus();
+          return false;
+       }    
+  else
+   {
+   return true;
+   }
+}
+
+//-->
+
+</script>
+
+<body>
+<h1 class="cvety">
+Students blog
+</h1>
+<p>
+%user_name%
+</p>
+<li><a class="t" href="1page.html" >Main page</a></li>
+<li><a class="t" href="preparation.html" >Preparation for exam</a></li>
+<li><a class="t" href="leisure.html" >Free time</a></li>
+<li><a href="reg.html">Registration</a></li>
+
+<form name="testform" method=post onSubmit="return testing(testform)" action="/authorization">  
+<TABLE>
+<TR>
+Log in:
+<TD ALIGN="RIGHT" VALIGN="MIDDLE">Login
+<TD ALIGN="LEFT">
+<INPUT NAME="name" SIZE="20" MAXLENGTH="150">
+</TR> <TR>
+<TD ALIGN="RIGHT" VALIGN="MIDDLE">Password
+<TD ALIGN="LEFT">
+<INPUT TYPE="password" NAME="pass" SIZE="20">
+</TR> </TABLE>
+<INPUT TYPE="reset" VALUE="clear">
+<INPUT TYPE="submit" VALUE="ok">
+</FORM>  
+
+<p class="main">
+%content%
+</p>
+
+
+</body>
+</html>

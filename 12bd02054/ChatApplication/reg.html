@@ -1,0 +1,122 @@
+﻿<html>
+<head>
+
+
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+   <meta http-equiv="Content-Language" content="ru">
+   <title>Регистрация</title>
+<script language="JavaScript">  
+
+<!-- 
+function testing(form) {
+   if (form.elements[0].value == "")
+      {
+          alert("Please enter your name");
+          document.testform.elements[0].focus();
+          return false;
+       }  
+	   if (form.elements[1].value == "")
+      {
+          alert("Please enter your name");
+          document.testform.elements[0].focus();
+          return false;
+       }  
+   if (form.elements[2].value == "")
+      {
+          alert("Please enter your login");
+          document.testform.elements[1].focus();
+          return false;
+       }          
+   if (form.elements[3].value == "")
+      {
+          alert("Please enter your password");
+          document.testform.elements[2].focus();
+          return false;
+       }    
+   if (form.elements[3].length <5)
+      {
+            alert("Password must consist of more than 5 characters");  
+            document.testform.elements[3].focus();
+            return false;			
+      }   
+
+   if (form.elements[3].value > "")
+      {
+          var checkOK = "abcdefgijklmnopqrstuvwxyz";
+          var checkStr = form.elements[3].value;
+          var allValid = true;
+          for (i = 0;  i < checkStr.length;  i++)
+          {
+            ch = checkStr.charAt(i);
+            for (j = 0;  j < checkOK.length;  j++)
+              if (ch == checkOK.charAt(j))
+                break;
+            if (j == checkOK.length)
+            {
+              allValid = false;
+              break;
+            }
+          }
+          if (!allValid)
+          {
+            alert("Please use only lower case letters of the English alphabet!");
+            document.testform.elements[3].focus();
+            document.testform.elements[3].select();
+            return (false);
+          }
+       }   
+  else
+   {
+   return true;
+   }
+}
+
+//-->
+
+</script>
+</head>
+
+<body vlink="#0000FF" OnLoad="document.testform.elements[0].focus()" topmargin="8" leftmargin="0" background="../image/fon-send.gif">
+
+<div align=right><i>Please fill in all fields</i></div>
+<form name="testform" method=post onSubmit="return testing(testform)" action="/regPage">
+<div align="center">
+  <center>
+<table WIDTH="600">
+<tr>
+<td ALIGN=RIGHT WIDTH="260"><font face="Arial">Name</font></td>
+<td WIDTH="331"><input NAME="name" SIZE=40></td>
+</tr>
+<tr>
+<td ALIGN=RIGHT WIDTH="260"><font face="Arial">Last Name</font></td>
+<td WIDTH="331"><input NAME="lname" SIZE=40></td>
+</tr>
+<tr>
+<td ALIGN=RIGHT WIDTH="248"><font face="Arial">Login</font></td>
+<td WIDTH="331"><input NAME="Login" SIZE=40></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT WIDTH="248"><font face="Arial">Password</font></td>
+<td WIDTH="331"><input type="password" NAME="parol" SIZE=15></td>
+</tr>
+
+
+
+
+
+<tr>
+<td ALIGN=RIGHT WIDTH="579" colspan="2">
+<input type="submit" value="Send">
+<input type="reset" value="Clear"></td>
+</tr>
+</table>
+
+  </center>
+</div>
+
+</form>
+
+</body>
+</html>
+
