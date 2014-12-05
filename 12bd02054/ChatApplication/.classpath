@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/111/Pictures/Sveta/KBTU/3semestr/Object-Oriented programming/eclipse/mysql-connector-java-5.1.14-bin.jar/mysql-connector-java-5.1.14-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/111/Pictures/Sveta/KBTU/3semestr/Object-Oriented programming/eclipse/commons-dbcp2-2.0.1-bin/commons-dbcp2-2.0.1/commons-dbcp2-2.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/111/Pictures/Sveta/KBTU/3semestr/Object-Oriented programming/eclipse/commons-collections-3.2.1-bin/commons-collections-3.2.1/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/111/Pictures/Sveta/KBTU/3semestr/Object-Oriented programming/eclipse/org.apache.commons.dbcp.jar/org.apache.commons.dbcp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/111/Pictures/Sveta/KBTU/3semestr/Object-Oriented programming/eclipse/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/111/Pictures/Sveta/KBTU/3semestr/Object-Oriented programming/eclipse/MsmqJava-1.2.1.2-bin/bin/MsmqJava.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jre1.8.0_25/lib/rt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
